@@ -1,6 +1,3 @@
-import pandas as pd
-
-
 
 class user_type:
     user_name:str
@@ -80,18 +77,31 @@ class Tenant:
             sno+=1
 
 
+class Owner(Tenant):
+    def addHouseDetails(self):
+        self.list_of_houses.append(HouseDetails(input("Enter locality:\n"),input("Enter city:\n"),int(input("Enter squareFeet:\n")),input("Enter housetype:\n"),input("Enter rent:\n"),int(input("Enter Ownerid:"))))
+
+
 obj = Portal()
 obj.list_of_persons()
 obj.show_list_of_users()
-check_User_Choice= obj.ask_user_choice()
+check_User_Choice = obj.ask_user_choice()
 
-#tenobj = Tenant()
-
-
+#ownobj = Owner()
 
 if check_User_Choice==1:
     tenobj = Tenant()
     tenobj.houses()
     tenobj.show_houses()
+    #ownobj.show_houses()
+
+
+elif check_User_Choice==2:
+    ownobj = Owner()
+    ownobj.addHouseDetails()
+    ownobj.houses()
+    ownobj.show_houses()
+
+
 
 
