@@ -8,7 +8,7 @@ The Online House Renting Portal allows to rent a house. The system consists of U
 Mock data
 
 Locality	Kodambakkam	Goripalayam	Anna Nagar
-City	Chennai	Madurai	Chennai
+City	        Chennai	        Madurai	        Chennai
 Square Feet	798	560	1200
 Type	2BHK	1BHK	3BHK
 Rent	Rs. 6000 / Month	Rs. 5500 / Month	Rs. 15000 / Month
